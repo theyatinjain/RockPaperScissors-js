@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS Game</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -15,9 +15,17 @@
 
     <main>
         <div class="scoreBoard">
-            <div id="user-label" class="badge">User</div>
-            <div id="computer-label" class="badge">Comp</div>
-            <span id="user-score">0</span> : <span id="computer-score">0</span>
+            <p>Round <span id="round-count">0</span></p>
+            <div class="scoreCardBox">
+                <div class="scoreCard">
+                    <div id="user-label" class="badge">User</div>
+                    <div id="user-score">0</div>
+                </div>
+                <div class="scoreCard">
+                    <div id="computer-label" class="badge">Comp</div>
+                    <div id="computer-score">0</div>
+                </div>
+            </div>
         </div>
 
         <div class="result">
@@ -25,13 +33,13 @@
         </div>
 
         <div class="choices">
-            <div class="choice" id="r">
+            <div class="choice" id="rock">
                 <img src="./images/hand_rock.png" alt="rock">
             </div>
-            <div class="choice" id="p">
+            <div class="choice" id="paper">
                 <img src="./images/hand_paper.png" alt="paper">
             </div>
-            <div class="choice" id="s">
+            <div class="choice" id="scissors">
                 <img src="./images/hand_scissors.png" alt="scissors">
             </div>
         </div>
